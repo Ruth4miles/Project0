@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Personal website</title>
+    <meta name=" viewport" content=" width=device-width, initial-scale=1.0">
+    <style>
+    @media ( min-width: 600px) {
+        body {
+            background-color:blue;
+        }  
+    }
+        @media( max-width: 500px) {
+        body {
+            background-color: red;
+        } 
+        }
+        @media ( min-width: 600px) {
+        h1::before {
+            content: " Welcome to my webpage";
+        }  
+    }
+        @media ( max-width: 500px) {
+        h1::before {
+            content: " Welcome";
+        }  
+    }
+    .grid {
+        background-color: green;
+        display: grid;
+        padding: 20px;
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+        grid-template-columns: auto auto auto;
+    }
+    .grid-item {
+        background-color: white;
+        font-size: 20px;
+    }
+        button {
+            width: 150px;
+            height: 30px;
+            font-size: 24px;
+            background-color: green;
+        }
+      button:hover{
+          background-color: blue;
+      }
+        input[type=text] {
+            background-color:lightblue;
+        }
+            input[type=number] {
+                background-color: lightblue;
+            }
+            p::selection {
+                color: red;
+                background-color: yellow;
+            }
+        </style>
+  </head>
+<body>
+    <h1></h1>
+    <form>
+        <input name=" name" type="text" placeholder=" First Name">
+        <input name=" name" type="text" placeholder=" Last Name">
+        <input name=" name" type="number" placeholder=" Age">
+    </form>
+<div>
+  <input name=" country" list=" countries" placeholder=" country">
+  <datalist id=" countries">
+    <option value=" Nigeria">
+      <option value=" America">
+        <option value=" Canada">
+          <option value=" UK">
+          </option>
+
+        </option>
+      </option>
+    </optionn>
+  </datalist>
+</div>
+<form>
+    <div>
+      Favorite food?
+      <input name="food" type="radio" value="rice">rice
+      <input name="food" type="radio" value="beans">Beans
+      <input name="food" type="radio" value="Garri">Garri
+      <input name="food" type="radio" value="others">Others
+    </div> 
+    </form>
+    <p>
+        <p>Ensure you fill out your information correctly before submitting the form</p>
+        <p>Ensure you fill out your information correctly before submitting the form</p>
+        <p class=" screen-only">Ensure you fill out your information correctly before submitting the form</p>
+        Please submit your form and logout.
+    </p>
+    <div class="grid">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+    <a href=" Login.html">
+        <button>submit</button>
+    </a>
+    <a href=" Login.html">
+        <button>Logout</button>
+    </a>
+</body>
+</html>
